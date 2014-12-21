@@ -1,0 +1,22 @@
+{
+    "name": "Devine/mycmd",
+    "description": "test command line app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aye Min Aung",
+            "email": "mgdevine89@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+      "symfony/console": "2.*",
+        "guzzlehttp/guzzle": "~4.2"
+    },
+
+    "autoload": {
+        "psr-4":{
+            "Acmee\\": "src"
+        }
+    }
+}

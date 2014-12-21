@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+
+<?php
+
+require "vendor/autoload.php";
+
+use Symfony\Component\Console\Application;
+use Acmee\NewCommand;
+use GuzzleHttp\Client;
+
+$app = new Application("Laravelapp", "1.0");
+$client = new Client;
+$app->add(new NewCommand($client));
+$app->run();
